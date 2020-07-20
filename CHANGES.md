@@ -1,5 +1,11 @@
 ## unreleased
 
+- Removed dependency on `biniou`, simplifying the chain of dependencies. This
+  changes some APIs:
+  * `Bi_outbuf.t` in signatures is replaced with `Buffer.t`
+  * `to_outbuf` becomes `to_buffer` and `stream_to_outbuf` becomes
+    `stream_to_buffer`
+
 ### Fix
 
 - Revert the deprecation warning on `json` type aliases
